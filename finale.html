@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaliyan's Capstone Web Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* ===== NAVIGATION BAR ===== */
+        .navbar {
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #4ec9b0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4ec9b0;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 4px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #4ec9b0;
+            color: #121212;
+        }
+
+        /* ===== PAGE SECTIONS ===== */
+        .page-section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        h2 {
+            color: #f1c40f;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            border-left: 4px solid #4ec9b0;
+            padding-left: 12px;
+        }
+
+        p {
+            color: #cccccc;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        /* ===== CARDS GRID ===== */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #569cd6;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #aaaaaa;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #1f1f1f;
+            color: #777777;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR WITH MULTI-PAGE NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">💻 Aaliyan Dev Portal</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE 1: HOME -->
+    <section id="home" class="page-section">
+        <h2>Home Page 🏠</h2>
+        <p>Welcome to my student and developer portfolio website! This site showcases my journey through school,
+            programming, and creative projects.</p>
+    </section>
+
+    <!-- PAGE 2: ABOUT -->
+    <section id="about" class="page-section">
+        <h2>About Me 👤</h2>
+        <p>I am Aaliyan, a 5th-grade student at LLS Ali Campus in Lahore, Pakistan. Over the past 5 months, I have
+            specialized in Web Development using HTML, CSS, JavaScript DOM manipulation, and VS Code.</p>
+    </section>
+
+    <!-- PAGE 3: ACADEMICS -->
+    <section id="academics" class="page-section">
+        <h2>Academic Highlights 📚</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>LLS Ali Campus</h3>
+                <p>Grade 5 student actively building ICT and digital presentation skills.</p>
+            </div>
+            <div class="card">
+                <h3>Codingal Student</h3>
+                <p>Completed 111+ classes spanning JavaScript DOM, CSS properties, and Capstone web projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 4: PROJECTS -->
+    <section id="projects" class="page-section">
+        <h2>Featured Projects 🚀</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Clipchamp AI Video</h3>
+                <p>Created an educational video showcasing artificial intelligence tools for school ICT.</p>
+            </div>
+            <div class="card">
+                <h3>Canva Business Poster</h3>
+                <p>Designed "The Guide to Online Business Strategy" poster highlighting digital planning.</p>
+            </div>
+            <div class="card">
+                <h3>Creative Writing</h3>
+                <p>Author of the 4-book series titled <em>Coding All The Way...</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 5: CONTACT -->
+    <section id="contact" class="page-section">
+        <h2>Contact Section 📩</h2>
+        <p><strong>Location:</strong> Lahore, Pakistan</p>
+        <p><strong>School:</strong> Lahore Literati School (Ali Campus)</p>
+        <p><strong>Status:</strong> Web Development Track Completed — Python Module Active!</p>
+    </section>
+
+    <footer>
+        &copy; 2026 Aaliyan | Final HTML & CSS Web Development Capstone Project
+    </footer>
+
+</body>
+
+</html>
